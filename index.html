@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecanismo de Pesquisa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Link para o seu arquivo JavaScript -->
+</head>
+<body>
+    <div style="position: relative; text-align: center;"> <!-- Contêiner pai -->
+        <img src="img/google-logo.png" alt="Descrição da imagem">
+        <input type="search" id="search" name="q" placeholder="Pesquisar..." onkeyup="showSuggestions(this.value)">
+        <div id="suggestions"></div> <!-- Contêiner para sugestões -->
+    </div>
+</body>
+</html>

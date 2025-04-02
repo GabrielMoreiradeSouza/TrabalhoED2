@@ -1,0 +1,90 @@
+/* Fundo escuro da página */
+body {
+    background: #101218;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo centralizado */
+img {
+    width: 272px;
+    display: block;
+    margin: 60px auto 20px auto;
+}
+
+/* Contêiner central */
+#search-container {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* Barra de busca */
+input[type="search"] {
+    width: 40%;
+    height: 45px;
+    padding: 0 45px 0 45px;
+    border: none;
+    border-radius: 24px;
+    background-color: #4D5160;
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 2;
+    position: relative;
+}
+
+/* Div de sugestões que aparece abaixo da barra */
+#suggestions {
+    position: absolute;
+    top: 97%; /* gruda logo abaixo do input */
+    left: 30%;
+    width: 40%;
+    background-color: #4D5160;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    max-height: 250px;
+    overflow-y: auto;
+    z-index: 1;
+    display: none;
+    color: white
+}
+
+/* Cada sugestão individual */
+.suggestion {
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.suggestion:last-child {
+    border-bottom: none;
+}
+
+.suggestion:hover {
+    background-color: #5a5f70;
+}
+
+/* Destaque da palavra encontrada */
+mark {
+    background-color: yellow;
+    color: black;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+/* Resultado completo (se for usado) */
+#resultado-completo {
+    margin-top: 30px;
+    padding: 20px;
+    color: white;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: pre-wrap;
+    background: #2b2f3a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
